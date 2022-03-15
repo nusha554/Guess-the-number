@@ -1,0 +1,169 @@
+@import url("https://fonts.googleapis.com/css2?family=Notable&family=Suravaram&family=Zilla+Slab&display=swap");
+
+:root {
+  --heading: "Notable", cursive;
+  --smaller-font: "Zilla Slab", sans-serif;
+
+  --red: #dd2c00;
+  --green: #76a21e;
+  --yellow: #fcbf1e;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #1b1b2f;
+  color: var(--yellow);
+  font-family: var(--smaller-font);
+  font-size: 1.5rem;
+  margin: 0 auto;
+  padding: 0 auto;
+  max-width: 80%;
+  height: 100%;
+  text-align: center;
+}
+
+.header {
+  color: var(--red);
+  font-family: var(--heading);
+  font-weight: lighter;
+  font-size: 3.5rem;
+  margin-bottom: 1.5rem;
+  top: -9rem;
+  position: relative;
+}
+
+.headerSmall {
+  color: var(--red);
+  font-family: var(--heading);
+  font-weight: lighter;
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  position: relative;
+  top: -7rem;
+}
+
+.wrapper {
+  font-size: 1.2rem;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 12em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 1em;
+}
+
+input {
+    width: 119%;
+    height: 3rem;
+    left: -8.7rem;
+    top: -4rem;
+    position: relative;
+    border: none;
+    border-radius: 10px;
+    padding: 1rem;
+}
+
+
+
+.easyBtn,
+.mediumBtn,
+.hardBtn,
+.playBtn,
+.restartBtn {
+  background-color: var(--yellow);
+  cursor: pointer;
+  font-weight: 700;
+  margin-right: 21px;
+  background-color: #fdfdc4;
+  font-family: var(--smaller-font);
+  font-size: 1rem;
+  width: 15rem;
+  height: 3rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  max-width: 85vw;
+}
+
+.restartBtn {
+    position: relative;
+    top: -4rem;
+    left: -1rem;
+}
+
+.playBtn {
+    position: relative;
+    top: -7rem;
+    left: 23rem;
+    padding: 0;
+}
+
+.easyBtn:hover,
+.mediumBtn:hover,
+.hardBtn:hover,
+.restartv:hover,
+.playBtn:hover,
+.restartBtn:hover {
+  background-color: var(--red);
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.success {
+  font-size: 3.2rem;
+  position: relative;
+  top: 11rem;
+}
+
+.guessNumberLarge {
+    color: #f4f6ff;
+    font-size: 2em;
+    text-shadow: 2.5px 2.5px 5px var(--green);
+    color: var(--green);
+    font-family: var(--heading);
+    font-size: 10rem;
+    opacity: 0.7;
+    position: absolute;
+    top: 123px;
+    left: 728px;
+    z-index: -163;
+}
+
+.guessNumberSmall {
+    color: #f4f6ff;
+    font-size: 2em;
+    text-shadow: 2.5px 2.5px 5px var(--green);
+    color: var(--green);
+    font-family: var(--heading);
+    font-size: 12rem;
+    opacity: 0.7;
+    position: absolute;
+    top: 93px;
+    left: 753px;
+    z-index: -163;
+}
+
+.numOfGuess {
+  color: #f4f6ff;
+  font-size: 2em;
+  text-shadow: 2.5px 2.5px 5px var(--green);
+}
+
+.guessAgain{
+    position: relative;
+    font-size: 3rem;
+    top: 4rem;
+}
